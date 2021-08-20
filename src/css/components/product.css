@@ -1,0 +1,31 @@
+.sidebar h4
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input
+{
+    margin-right: 10px;
+}
+.checklist
+{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+label
+{
+    font-size: 14px;
+    font-weight: 500;
+}
+label:hover
+{
+    cursor: pointer;
+    color: red;
+}
+.m-l
+{
+    width: 100%;
+    margin: 0 auto;
+}

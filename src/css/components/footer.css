@@ -1,0 +1,23 @@
+footer
+{
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid black;
+}
+.footer_title
+{
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+footer li
+{
+    margin-bottom: 8px;
+}
+footer li:hover
+{
+    color: red;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    transform: translateX(10px);
+}

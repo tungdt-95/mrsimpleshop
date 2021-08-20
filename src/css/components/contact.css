@@ -1,0 +1,72 @@
+.center_1,.center_2
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.center_1
+{
+    border-right: 2px solid black;
+}
+.center_2 h3
+{
+    margin-bottom: 10px;
+}
+.center_1 h3
+{
+    margin-bottom: 10px;
+}
+.title_phone
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: -83px;
+}
+.title_phone h4,.socaial_network h4
+{
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+.hotline
+{
+    font-size:20px;
+    margin-left: 6px;
+}
+.socaial_network
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.icon_heart
+{
+    margin-left: 104px;
+}
+.ins
+{
+    margin-left: 48px;
+}
+.icon_home
+{
+   margin-right: 10px;
+}
+.company
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.company h3
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.m-b
+{
+    margin-bottom: 20px;
+    margin-top: 35px;
+}

@@ -1,0 +1,12 @@
+@import "./base.css";
+@import "./grid.css";
+
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/home.css";
+@import "./components/policy.css";
+@import "./components/accesories.css";
+@import "./components/contact.css";
+@import "./components/slider.css";
+@import "./components/product.css";
+@import "./components/cart.css";

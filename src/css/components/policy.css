@@ -1,0 +1,19 @@
+.policy_cus
+{
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.icons
+{
+    width: 70px;
+    padding-left: 10px;
+    padding-right: 15px;
+}

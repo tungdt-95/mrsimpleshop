@@ -1,0 +1,55 @@
+h1
+{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.main_cart
+{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.cart_items
+{
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow-y:scroll ;
+}
+.del,.price
+{
+    text-align: right;
+}
+.del
+{
+    color: red;
+}
+.btn_sum
+{
+    border: 1px solid black;
+    background-color: #fff;
+    padding: 2px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.cart_btn
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.list_cart_items
+{
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.cart_total
+{
+    text-align: center;
+}
