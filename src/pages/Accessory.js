@@ -30,7 +30,7 @@ function Accessory(){
 const NewProducts = (props) => {
     const { img , title , price} =  props.accessory;
 return(
-        <div className="col l-3 accesories_list">
+        <div className="col l-3 accesories_list m-6 c-12">
             <img src={img} className="accesoies_item" alt="productitem"></img>
             <h2 className="item_title">{title}</h2>
             <p className="product_price">{price}</p>

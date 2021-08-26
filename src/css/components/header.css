@@ -83,4 +83,8 @@ nav li:hover
     {
         left: 0;
     }
+    .hide
+    {
+        display: none;
+    }
   }

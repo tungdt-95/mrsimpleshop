@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Policy from "../components/layout/Policy"
 import {data} from "../pages/DataAllProduct"
 
@@ -48,10 +49,30 @@ function Product(){
                 <div className="col l-10"> 
                 <h1 className="product_title">TẤT CẢ SẢN PHẨM</h1>
                    <div className="row">
-                   {data.map((product) => {
-                        return <ProductAll key={product.id} product={product} ></ProductAll>
-                        
+                   {data.map((product,index) => {
+                        return <ProductAll key={product.id} product={product} ></ProductAll>                     
                     })}  
+                    {/* {
+                        data.map(product =>(
+                            <div className="product_list" key={product.id}>
+                                <div className="row">
+                                    <div className="col l-3">
+                                        <Link to={`/details/${product.idid}`}>
+                                            <img src={product.img}></img>
+                                        </Link>
+                                        <h2 className="item_title_all" title={product.title}>
+                                        <Link to={`/details/${product.id}`}>{product.title}</Link>             
+                                        </h2>
+                                        <p className="product_price">{product.price}</p>
+                                        <div className="btn">
+                                            <button className="btn_item">Chọn Mua</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        ))
+                    } */}
                    </div>
                 </div>
                 <Policy/>
@@ -65,14 +86,21 @@ const ProductAll = (props) => {
         
     }
 
-    const { img , title , price} =  props.product;
+    const {id , img , title , price} =  props.product;
 return(
-        <div className="col l-3 m-6 c-12 product_list">
-            <img src={img} className="img_item" alt="productitem"></img>
-            <h2 className="item_title_all">{title}</h2>
-            <p className="product_price">{price}</p>
-            <div className="btn">
-                <button className="btn_item" onClick={Addtocart}>Chọn Mua</button>
+        <div className="col l-3 m-6 c-12">
+            <div className="product_list" key={id}>
+                <Link to={`details/${id}`}>
+                    <img src={img} className="img_item" alt="productitem"></img>
+                </Link>
+
+                <h2 className="item_title_all" title={title}>
+                   <Link to={`/details/${id}`}>{title}</Link>
+                </h2>
+                <p className="product_price">{price}</p>
+                <div className="btn">
+                    <button className="btn_item" onClick={Addtocart}>Chọn Mua</button>
+                </div>
             </div>
         </div>
 );

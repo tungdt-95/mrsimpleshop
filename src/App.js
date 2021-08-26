@@ -9,7 +9,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import HomePage from "./pages/Home";
 import CartPage from "./pages/Cart";
-
+import DetailsPage from "./pages/Details";
 function App() {
   return (
     <div>
@@ -20,6 +20,9 @@ function App() {
         </Route>
         <Route path="/product">
           <ProductPage></ProductPage>
+        </Route>
+        <Route path="/details/:id">
+          <DetailsPage></DetailsPage>
         </Route>
         <Route path="/accesory">
           <AccessoryPage></AccessoryPage>

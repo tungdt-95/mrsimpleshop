@@ -18,7 +18,7 @@ function Home(){
         },[]);
     return(
         <div>
-            <div className="grid">
+            <div className="grid hide">
                 <SliderList/>
             </div>
              <div className="grid wide">   
@@ -36,12 +36,14 @@ function Home(){
 const NewProducts = (props) => {
         const { img , title , price} =  props.product;
     return(
-            <div className="col l-3 c-12 product_list">
-                <img src={img} className="img_item" alt="productitem"></img>
-                <h2 className="item_title">{title}</h2>
-                <p className="product_price">{price}</p>
-                <div className="btn">
-                    <button className="btn_item">Chọn Mua</button>
+            <div className="col l-3 c-12">
+                <div className="product_list">
+                    <img src={img} className="img_item" alt="productitem"></img>
+                    <h2 className="item_title">{title}</h2>
+                    <p className="product_price">{price}</p>
+                    <div className="btn">
+                        <button className="btn_item">Chọn Mua</button>
+                    </div>
                 </div>
             </div>
     );

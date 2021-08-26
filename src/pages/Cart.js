@@ -37,8 +37,10 @@ function Cart()
                    <div className="col l-2 price">
                        <p>400.999Đ</p>
                    </div>
-                   <div className="col l-2 del">
-                      <DeleteIcon/>
+                   <div className="col l-2">
+                      <div className="del">
+                        <DeleteIcon/>
+                      </div>
                    </div>
                </div>   
                <div className="cart_total">
