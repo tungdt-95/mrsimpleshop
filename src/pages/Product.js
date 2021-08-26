@@ -99,7 +99,7 @@ return(
                 </h2>
                 <p className="product_price">{price}</p>
                 <div className="btn">
-                    <button className="btn_item" onClick={Addtocart}>Chọn Mua</button>
+                    <button className="btn_item" onClick={Addtocart}>THÊM VÀO GIỎ HÀNG</button>
                 </div>
             </div>
         </div>
