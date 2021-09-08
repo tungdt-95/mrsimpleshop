@@ -19,8 +19,8 @@ function Accessory(){
         <div className="grid wide">
                <h1 className="product_title">Phụ kiện </h1>
             <div className="row">
-            {accesories.map((accessory) => {
-                    return <NewProducts accessory={accessory}></NewProducts>
+            {accesories.map((accessory,id) => {
+                    return <NewProducts key={accesories.id} accessory={accessory}></NewProducts>
                 })}  
                 <Policy/> 
             </div>
@@ -30,12 +30,14 @@ function Accessory(){
 const NewProducts = (props) => {
     const { img , title , price} =  props.accessory;
 return(
-        <div className="col l-3 accesories_list m-6 c-12">
-            <img src={img} className="accesoies_item" alt="productitem"></img>
-            <h2 className="item_title">{title}</h2>
-            <p className="product_price">{price}</p>
-            <div className="btn">
-                <button className="btn_item">Chọn Mua</button>
+        <div className="col l-3 m-6 c-12">
+            <div className="accesories_list">
+                <img src={img} className="accesoies_item" alt="productitem"></img>
+                <h2 className="item_title">{title}</h2>
+                <p className="product_price">{price}</p>
+                <div className="btn">
+                    <button className="btn_item">MUA NGAY</button>
+                </div>
             </div>
         </div>
 );

@@ -42,7 +42,7 @@ const NewProducts = (props) => {
                     <h2 className="item_title">{title}</h2>
                     <p className="product_price">{price}</p>
                     <div className="btn">
-                        <button className="btn_item">Chọn Mua</button>
+                        <button className="btn_item">MUA NGAY</button>
                     </div>
                 </div>
             </div>

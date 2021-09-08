@@ -6,9 +6,11 @@ import Policy from "../components/layout/Policy";
 function Details()
 {
     const {id} = useParams();
+
     return(
         <div>
-          {data.filter(person =>person.id === id).map(product => (
+            <h1 className="product_title">CHI TIẾT SẢN PHẨM</h1>
+             {data.filter(details =>details.id === id).map(product => (
                 <div className="grid wide">
                         <div className="details_list">
                             <div className="row">
@@ -44,6 +46,7 @@ function Details()
                                     </div>
                                 </div>
                                 <button className="details_btn">THÊM VÀO GIỎ HÀNG</button>
+                                <button className="details_btn">MUA NGAY</button>
                             </div>
                             <div className="col l-4">
                                 <img src={product.img} className="details_img" alt="ha"></img>

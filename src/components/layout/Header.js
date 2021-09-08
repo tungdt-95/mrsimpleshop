@@ -8,6 +8,7 @@ import { useState } from "react";
 function Header(){
   
     const [menu,setmenu] = useState(false);
+   
 
     return(
         <div className="grid header">
@@ -41,17 +42,23 @@ function Header(){
                    
                 </div>
                 <div className="col l-4"> 
-                    <div className="center">
+                    <div className="center cart_icon">
+                        <span></span>
+                        <Link to="/cart" className="">
+                            <ShoppingCartIcon/>
+                        </Link> 
+                    </div>
+                    {/* <div className="center">
                         <ul>
                             <li className="cart">
                                 <SearchIcon style={{marginRight: 20}} className="social"/>
                                 <PeopleIcon style={{marginRight: 20}}/>
-                                 <Link to="/cart">
+                                 <Link to="/cart" className="">
                                     <ShoppingCartIcon/>
                                 </Link> 
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                     
                 </div>
             </div>

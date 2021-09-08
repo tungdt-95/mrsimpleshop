@@ -54,3 +54,18 @@ h1
 {
     text-align: center;
 }
+.cart_icon
+{
+    position: relative;
+}
+.cart_icon span
+{
+    background-color: red;
+    border-radius: 20px;
+    color: #fff;
+    position: absolute;
+     top: -10px;
+     left: 204px;
+     font-size: 10px;
+     padding: 5px;
+}

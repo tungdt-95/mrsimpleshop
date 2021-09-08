@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Policy from "../components/layout/Policy"
 import {data} from "../pages/DataAllProduct"
 
 function Product(){
+
     return(
         <div className="grid wide">
             <div className="row m-l"> 
@@ -50,29 +52,8 @@ function Product(){
                 <h1 className="product_title">TẤT CẢ SẢN PHẨM</h1>
                    <div className="row">
                    {data.map((product,index) => {
-                        return <ProductAll key={product.id} product={product} ></ProductAll>                     
-                    })}  
-                    {/* {
-                        data.map(product =>(
-                            <div className="product_list" key={product.id}>
-                                <div className="row">
-                                    <div className="col l-3">
-                                        <Link to={`/details/${product.idid}`}>
-                                            <img src={product.img}></img>
-                                        </Link>
-                                        <h2 className="item_title_all" title={product.title}>
-                                        <Link to={`/details/${product.id}`}>{product.title}</Link>             
-                                        </h2>
-                                        <p className="product_price">{product.price}</p>
-                                        <div className="btn">
-                                            <button className="btn_item">Chọn Mua</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        ))
-                    } */}
+                        return <ProductAll key={index} product={product} ></ProductAll>                     
+                    })}                     
                    </div>
                 </div>
                 <Policy/>
@@ -81,9 +62,40 @@ function Product(){
     );
 }
 const ProductAll = (props) => {
-    const Addtocart = () => {
-        console.log("hello");
-        
+
+    const [products,setProducts] = useState(data)
+
+    const [cart,setCart] = useState([])
+
+    useEffect ( () => {
+        const datacart =  JSON.parse(localStorage.getItem('datacart'))
+        if(datacart) setCart(datacart)
+    },[])
+
+    useEffect ( () => {
+        localStorage.setItem('datacart',JSON.stringify(cart))
+    },[cart])
+    
+    const value = {
+        products:[products,setProducts],
+        cart:[cart,setCart]
+    }
+    // console.log(value);
+
+    const Addtocart = (id) => {
+        const check = cart.every(item =>{
+            return item.id !== id
+        }) 
+        if(check){
+            const datacart = products.filter(product =>{
+                return product.id === id
+            })
+            setCart([...cart, ...datacart])
+        }
+        else
+        {
+            alert("Sản phẩm đã được thêm vào giỏ hàng")
+        }
     }
 
     const {id , img , title , price} =  props.product;
@@ -99,7 +111,7 @@ return(
                 </h2>
                 <p className="product_price">{price}</p>
                 <div className="btn">
-                    <button className="btn_item" onClick={Addtocart}>THÊM VÀO GIỎ HÀNG</button>
+                    <button className="btn_item" onClick={() =>Addtocart(id)}>MUA NGAY</button>
                 </div>
             </div>
         </div>
