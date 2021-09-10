@@ -10,6 +10,8 @@ import Footer from "./components/layout/Footer";
 import HomePage from "./pages/Home";
 import CartPage from "./pages/Cart";
 import DetailsPage from "./pages/Details";
+import DetailsPolo from "./pages/DetailsPolo";
+
 function App() {
   return (
     <div>
@@ -23,6 +25,9 @@ function App() {
         </Route>
         <Route path="/details/:id">
           <DetailsPage></DetailsPage>
+        </Route>
+        <Route path="/detailspolo/:id">
+          <DetailsPolo></DetailsPolo>
         </Route>
         <Route path="/accesory">
           <AccessoryPage></AccessoryPage>

@@ -1,20 +1,35 @@
 import { Link } from "react-router-dom";
-import SearchIcon from '@material-ui/icons/Search';
-import PeopleIcon from '@material-ui/icons/People';
+// import SearchIcon from '@material-ui/icons/Search';
+// import PeopleIcon from '@material-ui/icons/People';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import CloseIcon from '@material-ui/icons/Close';
 import MenuIcon from '@material-ui/icons/Menu';
 import { useState } from "react";
 function Header(){
   
-    const [menu,setmenu] = useState(false);
-   
+    const [ menu, setmenu ] = useState(false);
+
+    const [ header, setheader ] = useState(false);
+
+    const changeheader = () => {
+        if(window.scrollY >= 100)
+        {
+           setheader(true);
+        }else
+        {
+            setheader(false);
+        }
+    }
+    window.addEventListener('scroll',changeheader);
 
     return(
-        <div className="grid header">
+        <header className={ header ? "header active" : "header"}>
+            <div className="grid wide">
             <div className="row">
                 <div className="col l-4 c-6"> 
-                    <h1 className="logo">MRSIMPLE</h1>
+                 <Link to="/">
+                     <h1 className="logo">MRSIMPLE</h1>
+                 </Link>
                 </div>
                 <div className="menu">
                         <MenuIcon  onClick={() => setmenu(!menu)} style={{fontSize:30}}></MenuIcon>
@@ -64,6 +79,9 @@ function Header(){
             </div>
 
         </div>
+
+        </header>
+        
     );
 
 }

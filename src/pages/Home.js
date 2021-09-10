@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Policy from "../components/layout/Policy";
 import SliderList from "../components/layout/Slider"
+import { Link } from "react-router-dom";
 
 function Home(){
         const [products,setProducts] = useState([]);
@@ -34,11 +35,13 @@ function Home(){
     );
 }
 const NewProducts = (props) => {
-        const { img , title , price} =  props.product;
+        const {id, img , title , price} =  props.product;
     return(
             <div className="col l-3 c-12">
-                <div className="product_list">
-                    <img src={img} className="img_item" alt="productitem"></img>
+                <div className="product_list" key={id}>
+                    <Link to={`detailspolo/${id}`}>
+                     <img src={img} className="img_item" alt="productitem"></img>
+                    </Link>
                     <h2 className="item_title">{title}</h2>
                     <p className="product_price">{price}</p>
                     <div className="btn">
