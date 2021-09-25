@@ -8,7 +8,8 @@ function Product(){
     return(
         <div className="grid wide">
             <div className="row m-l"> 
-                <div className="col l-2 sidebar"> 
+                <div className="col l-2"> 
+                    <div className="sidebar">
                     <h4>Danh Mục Sản Phẩm</h4>
                     <div className="checklist">
                         <input type="checkbox"></input>
@@ -46,13 +47,14 @@ function Product(){
                     <div className="checklist">
                     <input type="checkbox"></input>
                         <label>XL</label>  
-                    </div>     
+                    </div>  
+                    </div>   
                 </div>
                 <div className="col l-10"> 
                 <h1 className="product_title">TẤT CẢ SẢN PHẨM</h1>
                    <div className="row">
                    {data.map((product,index) => {
-                        return <ProductAll key={index} product={product} ></ProductAll>                     
+                        return <ProductAll key={product.id} product={product} ></ProductAll>                     
                     })}                     
                    </div>
                 </div>

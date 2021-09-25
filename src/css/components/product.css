@@ -3,6 +3,10 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.sidebar
+{
+    position: fixed;
+}
 input
 {
     margin-right: 10px;

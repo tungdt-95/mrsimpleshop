@@ -1,12 +1,23 @@
-import { useParams } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import {data} from "./DataAllProduct";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Policy from "../components/layout/Policy";
+import { useState } from "react";
 function Details()
 {
     const {id} = useParams();
-
+    const [count,setCount] = useState(1);
+    const desc = () =>{
+        setCount (count - 1);
+        if(count <= 1)
+        {
+            setCount(1);
+        }
+    }
+    const insc = () =>{
+        setCount (count + 1);
+    }
     return(
         <div>
             <h1 className="product_title">CHI TIẾT SẢN PHẨM</h1>
@@ -23,7 +34,10 @@ function Details()
                                 <div className="details_color">
                                     {
                                          product.color.map((color,index)=>(
-                                            <button key={index} style={{backgroundColor:color}}></button>
+                                            <button 
+                                                key={index} 
+                                                style={{backgroundColor:color}}>
+                                            </button>
                                         ))
                                     }
                                 </div>
@@ -40,9 +54,15 @@ function Details()
                                          <p>Số lượng:</p>
                                     </div>
                                     <div className="quantity_sub">
-                                        <ArrowBackIosIcon style={{fontSize:25}}/>
-                                        <span>0</span>
-                                        <ArrowForwardIosIcon style={{fontSize:25}}/>
+                                        <ArrowBackIosIcon 
+                                            style={{fontSize:25}} 
+                                            onClick={desc}
+                                        />
+                                        <span>{count}</span>
+                                        <ArrowForwardIosIcon
+                                            style={{fontSize:25}}
+                                            onClick={insc}
+                                        />
                                     </div>
                                 </div>
                                 <button className="details_btn">THÊM VÀO GIỎ HÀNG</button>

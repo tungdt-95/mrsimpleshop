@@ -25,8 +25,8 @@ function Home(){
              <div className="grid wide">   
                 <h1 className="product_title">SẢN PHẨM POLO MỚI</h1>
                 <div className="row">                
-                        {products.map((product) => {
-                        return <NewProducts product={product}></NewProducts>                        
+                        {products.map((product,index) => {
+                        return <NewProducts key={product.id} product={product}></NewProducts>                        
                     })}  
                     <Policy/>
                 </div> 

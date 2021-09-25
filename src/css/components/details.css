@@ -102,3 +102,7 @@
     justify-content: stretch;
     align-items: center;
 }
+.quantity_sub:hover
+{
+    cursor: pointer;
+}
