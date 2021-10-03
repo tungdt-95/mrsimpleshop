@@ -6,9 +6,10 @@ footer
 }
 .footer_title
 {
-    font-size: 18px;
-    padding-bottom: 20px;
-    padding-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
 footer a:hover
 {

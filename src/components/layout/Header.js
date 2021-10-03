@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-// import SearchIcon from '@material-ui/icons/Search';
-// import PeopleIcon from '@material-ui/icons/People';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import CloseIcon from '@material-ui/icons/Close';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -17,7 +15,7 @@ function Header() {
     const [header, setheader] = useState(false);
 
     const changeheader = () => {
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 50) {
             setheader(true);
         } else {
             setheader(false);
@@ -66,18 +64,6 @@ function Header() {
                                 <ShoppingCartIcon />
                             </Link>
                         </div>
-                        {/* <div className="center">
-                        <ul>
-                            <li className="cart">
-                                <SearchIcon style={{marginRight: 20}} className="social"/>
-                                <PeopleIcon style={{marginRight: 20}}/>
-                                 <Link to="/cart" className="">
-                                    <ShoppingCartIcon/>
-                                </Link> 
-                            </li>
-                        </ul>
-                    </div> */}
-
                     </div>
                 </div>
 

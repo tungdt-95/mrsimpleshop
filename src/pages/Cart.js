@@ -6,19 +6,19 @@ function Cart() {
     const value = useContext(DataContext)
     const [cart, setcart] = value.cart
 
-    const [total,settotal] = useState(0)
+    const [total, settotal] = useState(0)
 
-    useEffect(() =>{
-      const gettotal = () => {
-        const num = cart.reduce((prev,item) => {
-            return prev + ( item.price * item.count )
-        },0)
-        settotal(num)
-      } 
-      gettotal()
-    },[cart])
-   
-   
+    useEffect(() => {
+        const gettotal = () => {
+            const num = cart.reduce((prev, item) => {
+                return prev + (item.price * item.count)
+            }, 0)
+            settotal(num)
+        }
+        gettotal()
+    }, [cart])
+
+
 
 
     if (cart.length === 0) {
@@ -55,14 +55,15 @@ function Cart() {
         <div className="grid wide">
             <div className="main_cart">
                 <h1>Giỏ hàng của bạn</h1>
-                <p>Bạn có <span>{cart.length}</span> sản phẩm trong giỏ hàng</p>
+                <p>Bạn có  <span>{cart.length}</span>  sản phẩm trong giỏ hàng</p>
             </div>
             <div className="cart_items">
                 {
                     cart.map(product => (
                         <div className="list_cart_items">
-                            <div className="row">
-                                <div className="col l-2 c-12">
+                          <div className="cart_item">
+                          <div className="row">
+                                <div className="col l-2 m-12 c-12">
                                     <img src={product.img} className="img_cart" alt="title"></img>
                                 </div>
                                 <div className="col l-4 c-12">
@@ -85,6 +86,7 @@ function Cart() {
                                     </div>
                                 </div>
                             </div>
+                          </div>
                         </div>
 
                     ))

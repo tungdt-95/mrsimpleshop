@@ -29,12 +29,8 @@ function SliderList (){
                         <div>
                              <img  alt="ha"src="https://mrsimple.vn/images/slider/desktop1628225735.jpg" className="slider_1"></img>
                         </div>  
-                        <div>
-                            <img alt="ha" src="https://mrsimple.vn/images/slider/desktop1628852808.jpg" className="slider_1"></img>
-                        </div>
-                        <div>
-                             <img  alt="ha" src="https://mrsimple.vn/images/slider/desktop1628225735.jpg" className="slider_1"></img>
-                        </div>  
+                        
+                        
                     </Slider>
 
                 </div>

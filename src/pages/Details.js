@@ -1,11 +1,19 @@
 import { useParams} from "react-router-dom";
-import {data} from "./DataAllProduct";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Policy from "../components/layout/Policy";
 import { useState } from "react";
+import { DataContext } from "../components/layout/DataProvider"
+import React, { useContext } from "react";
+
 function Details()
 {
+
+    const value = useContext(DataContext)
+    const [products] = value.products
+    const Addtocart = value.Addtocart
+
+
     const {id} = useParams();
     const [count,setCount] = useState(1);
     const desc = () =>{
@@ -21,7 +29,7 @@ function Details()
     return(
         <div>
             <h1 className="product_title">CHI TIẾT SẢN PHẨM</h1>
-             {data.filter(details =>details.id === id).map(product => (
+             {products.filter(details =>details.id === id).map(product => (
                 <div className="grid wide">
                         <div className="details_list">
                             <div className="row">
@@ -30,7 +38,7 @@ function Details()
                             </div>
                             <div className="col l-4">
                                 <h2 className="details_title">{product.title}</h2>
-                                <p className="details_price">{product.price}</p>
+                                <p className="details_price">{product.price}Đ</p>
                                 <div className="details_color">
                                     {
                                          product.color.map((color,index)=>(
@@ -65,7 +73,7 @@ function Details()
                                         />
                                     </div>
                                 </div>
-                                <button className="details_btn">THÊM VÀO GIỎ HÀNG</button>
+                                <button className="details_btn" onClick={() => Addtocart(id)}>THÊM VÀO GIỎ HÀNG</button>
                                 <button className="details_btn">MUA NGAY</button>
                             </div>
                             <div className="col l-4">
