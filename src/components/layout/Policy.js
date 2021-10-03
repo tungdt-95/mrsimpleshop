@@ -1,8 +1,6 @@
-
-
-
-function Policy(){
-    return(
+import React from 'react';
+function Policy() {
+    return (
         <div className="grid wide">
             <div className="row">
                 <div className="col l-4 c-12">

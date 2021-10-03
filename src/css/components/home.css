@@ -31,23 +31,22 @@
 .item_title
 {
     font-size: 14px;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 5px;
 }
 .item_title_all
 {
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 15px;
     font-size: 12px;
     text-align: center;
+    font-weight: 700;
 }
 .product_price
 {
     font-size: 16px;
     font-weight: 700;
-    padding-bottom: 5px;
 }
-.btn
+.btn_center
 {
     text-align: center;
 }

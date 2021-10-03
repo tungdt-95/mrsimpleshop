@@ -35,7 +35,7 @@ return(
                 <img src={img} className="accesoies_item" alt="productitem"></img>
                 <h2 className="item_title">{title}</h2>
                 <p className="product_price">{price}</p>
-                <div className="btn">
+                <div className="btn_center">
                     <button className="btn_item">MUA NGAY</button>
                 </div>
             </div>

@@ -2,7 +2,6 @@
 {
     width: 100%;
     padding-top: 15px;
-    padding-bottom: 15px;
     box-shadow: #0000003d 0px 3px 8px;
     position: sticky;
     top: 0;
@@ -18,21 +17,13 @@
 {
     display: none;
 }
-.logo
-{
-    margin-top: 6px;
-}
-nav
-{
-    margin-top: 6px;
-}
+
 nav li 
 {
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
-    padding-right: 15px;
-    text-align: center;
+    padding-right: 10px;
     cursor: pointer;
 }
 nav li:hover
@@ -40,7 +31,7 @@ nav li:hover
     color: red;
     transition: .3s ease-in-out;
 }
-.center
+.center_cart
 {
     text-align: center;
     margin-top: 5px;
@@ -67,13 +58,14 @@ nav li:hover
         background: #ccc;
         color: black;
         transition: 0.5s ease-in;
+        z-index: 9999;
     }
     .menu
     {
         display: block;
         position: absolute;
         top: 9px;
-        right: 24px;
+        right: -270px;
         cursor: pointer;
     }
     .menuclose
@@ -81,7 +73,7 @@ nav li:hover
         display: block;
         position: absolute;
         top: 2px;
-        right: 10px;
+        right: 280px;
         cursor: pointer;
     }
     .center
@@ -96,4 +88,15 @@ nav li:hover
     {
         display: none;
     }
+    .cart
+    {
+        top: -8px;
+        right: 135px;
+    }
+    .cart_icon span
+    {
+        width:4%;
+        left:198px;
+    }
+    
   }

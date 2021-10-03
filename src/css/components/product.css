@@ -33,3 +33,10 @@ label:hover
     width: 100%;
     margin: 0 auto;
 }
+@media only screen and (max-width: 667px)
+{
+    .sidebar
+    {
+        display: none;
+    }
+}
