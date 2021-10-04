@@ -82,7 +82,7 @@ const ProductAll = (props) => {
                 <h2 className="item_title_all" title={title}>
                     <Link to={`/details/${id}`}>{title}</Link>
                 </h2>
-                <p className="product_price">{price}</p>
+                <p className="product_price">{price}Đ</p>
                 <div className="btn_center">
                     <button className="btn_item" onClick={() => Addtocart(id)}>THÊM VÀO GIỎ HÀNG</button>
                 </div>
