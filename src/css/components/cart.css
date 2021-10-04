@@ -100,9 +100,10 @@ h1
     color: #fff;
     position: absolute;
     top: 7px;
-    right: 224px;
+    right: 245px;
     font-size: 10px;
     padding: 3px;
+    z-index: 99999;
 }
 .img_cart
 {
