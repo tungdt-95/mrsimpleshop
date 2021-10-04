@@ -24,7 +24,7 @@ function DetailsPolo() {
     return(
         <div>
             <h1 className="product_title">CHI TIẾT SẢN PHẨM</h1>
-            {products.filter( details => details.id == id).map(product => (
+            {products.filter( details => details.id === id).map(product => (
 
                 <div className="grid wide">
                         <div className="details_list">
