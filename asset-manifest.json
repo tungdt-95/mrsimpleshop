@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/mrsimpleshop/static/css/main.6711b4dd.chunk.css",
-    "main.js": "/mrsimpleshop/static/js/main.24de5b3c.chunk.js",
-    "main.js.map": "/mrsimpleshop/static/js/main.24de5b3c.chunk.js.map",
+    "main.js": "/mrsimpleshop/static/js/main.cd32a097.chunk.js",
+    "main.js.map": "/mrsimpleshop/static/js/main.cd32a097.chunk.js.map",
     "runtime-main.js": "/mrsimpleshop/static/js/runtime-main.f7b85192.js",
     "runtime-main.js.map": "/mrsimpleshop/static/js/runtime-main.f7b85192.js.map",
     "static/css/2.85314bae.chunk.css": "/mrsimpleshop/static/css/2.85314bae.chunk.css",
-    "static/js/2.96ba5698.chunk.js": "/mrsimpleshop/static/js/2.96ba5698.chunk.js",
-    "static/js/2.96ba5698.chunk.js.map": "/mrsimpleshop/static/js/2.96ba5698.chunk.js.map",
+    "static/js/2.c1e96127.chunk.js": "/mrsimpleshop/static/js/2.c1e96127.chunk.js",
+    "static/js/2.c1e96127.chunk.js.map": "/mrsimpleshop/static/js/2.c1e96127.chunk.js.map",
     "index.html": "/mrsimpleshop/index.html",
     "static/css/2.85314bae.chunk.css.map": "/mrsimpleshop/static/css/2.85314bae.chunk.css.map",
     "static/css/main.6711b4dd.chunk.css.map": "/mrsimpleshop/static/css/main.6711b4dd.chunk.css.map",
-    "static/js/2.96ba5698.chunk.js.LICENSE.txt": "/mrsimpleshop/static/js/2.96ba5698.chunk.js.LICENSE.txt",
+    "static/js/2.c1e96127.chunk.js.LICENSE.txt": "/mrsimpleshop/static/js/2.c1e96127.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/mrsimpleshop/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.f7b85192.js",
     "static/css/2.85314bae.chunk.css",
-    "static/js/2.96ba5698.chunk.js",
+    "static/js/2.c1e96127.chunk.js",
     "static/css/main.6711b4dd.chunk.css",
-    "static/js/main.24de5b3c.chunk.js"
+    "static/js/main.cd32a097.chunk.js"
   ]
 }
