@@ -18,9 +18,6 @@ function Cart() {
         gettotal()
     }, [cart])
 
-
-
-
     if (cart.length === 0) {
         return <h3 className="cart_title">Chưa có sản phẩm nào được thêm vào giỏ hàng</h3>
     }
@@ -49,7 +46,7 @@ function Cart() {
         })
         setcart([...cart])
     }
-
+   
 
     return (
         <div className="grid wide">
@@ -74,7 +71,6 @@ function Cart() {
                                         <span className="btn_cart" onClick={() => reduction(product.id)}>-</span>
                                         <span className="quantity_cart">{product.count}</span>
                                         <span className="btn_cart" onClick={() => increase(product.id)}>+</span>
-
                                     </div>
                                 </div>
                                 <div className="col l-2 c-4">
@@ -88,17 +84,13 @@ function Cart() {
                             </div>
                           </div>
                         </div>
-
                     ))
                 }
                 <div className="cart_total">
                     <h3>Tổng tiền : <span>{`${total}.000Đ`}</span></h3>
                 </div>
             </div>
-
-
         </div>
     )
-
 }
 export default Cart;
