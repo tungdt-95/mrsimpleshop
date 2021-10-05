@@ -65,15 +65,15 @@ nav li:hover
         display: block;
         position: absolute;
         top: 9px;
-        right: -270px;
+        right: -328px;
         cursor: pointer;
     }
     .menuclose
     {
         display: block;
         position: absolute;
-        top: 2px;
-        right: 280px;
+        top: 13px;
+        right: 330px;
         cursor: pointer;
     }
     .center
