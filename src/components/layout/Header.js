@@ -5,7 +5,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { useState } from "react";
 import React, { useContext } from "react";
 import { DataContext } from "./DataProvider"
-
 function Header() {
     const value = useContext(DataContext)
     const [cart] = value.cart
@@ -61,7 +60,7 @@ function Header() {
                         <div className="center_cart cart_icon">
                             <span>{cart.length}</span>
                             <Link to="/cart" className="cart">
-                                <ShoppingCartIcon />
+                                <ShoppingCartIcon/>
                             </Link>
                         </div>
                     </div>

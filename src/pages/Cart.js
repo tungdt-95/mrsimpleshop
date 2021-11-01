@@ -56,8 +56,8 @@ function Cart() {
             </div>
             <div className="cart_items">
                 {
-                    cart.map(product => (
-                        <div className="list_cart_items">
+                    cart.map(product=> (
+                        <div className="list_cart_items" key={product.id}>
                           <div className="cart_item">
                           <div className="row">
                                 <div className="col l-2 m-12 c-12">

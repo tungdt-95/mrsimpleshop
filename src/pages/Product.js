@@ -57,7 +57,7 @@ function Product() {
                     <h1 className="product_title">TẤT CẢ SẢN PHẨM</h1>
                     <div className="row">
                         {products.map((product, index) => {
-                            return <ProductAll key={product.id} product={product} ></ProductAll>
+                            return <ProductAll key={index} product={product} ></ProductAll>
                         })}
                     </div>
                 </div>

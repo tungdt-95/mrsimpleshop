@@ -20,7 +20,7 @@ function Accessory(){
                <h1 className="product_title">Phụ kiện </h1>
             <div className="row">
             {accesories.map((accessory,index) => {
-                    return <NewProducts key={accesories.id} accessory={accessory}></NewProducts>
+                    return <NewProducts key={index} accessory={accessory}></NewProducts>
                 })}  
                 <Policy/> 
             </div>
