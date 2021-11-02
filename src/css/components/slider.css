@@ -1,4 +1,39 @@
+.slider
+{
+    margin-top: 20px;
+}
 .slider_1
 {
     width: 100%;
+    border-radius: 20px;
 }
+.slick-slider .slick-prev,.slick-slider .slick-next
+{
+    padding: 20px 40px;
+    z-index: 999; 
+}
+.slick-slider .slick-prev
+{
+    left: -38px;
+}
+.slick-slider .slick-next
+{
+    right:-38px;
+}
+.slick-slider .slick-prev::before,.slick-slider .slick-next::before
+{
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-46%);
+}
+.slick-slider .slick-dots li button:before
+{
+    font-size: 14px;
+    border-radius: 50%;
+    color: rgb(95, 158, 160);
+}
+
+
+
+
