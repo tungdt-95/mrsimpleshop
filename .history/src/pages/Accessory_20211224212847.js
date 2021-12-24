@@ -32,11 +32,15 @@ const NewProducts = (props) => {
 return(
         <div className="col l-3 m-6 c-12">
             <div className="accesories_list">
+            <Link to={`detailspolo/${id}`}>
+                
                 <img src={img} className="accesoies_item" alt="productitem"></img>
+                </Link>
+
                 <h2 className="item_title">{title}</h2>
                 <p className="product_price">{price}</p>
                 <div className="btn_center">
-                    <button className="btn_item">XEM CHI TIẾT</button>
+                    <button className="btn_item">MUA NGAY</button>
                 </div>
             </div>
         </div>

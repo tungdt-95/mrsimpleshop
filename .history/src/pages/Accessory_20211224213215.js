@@ -36,7 +36,7 @@ return(
                 <h2 className="item_title">{title}</h2>
                 <p className="product_price">{price}</p>
                 <div className="btn_center">
-                    <button className="btn_item">XEM CHI TIẾT</button>
+                    <button className="btn_item"></button>
                 </div>
             </div>
         </div>

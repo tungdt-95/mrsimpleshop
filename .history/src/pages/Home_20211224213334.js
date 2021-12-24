@@ -45,7 +45,7 @@ const NewProducts = (props) => {
                 <p className="product_price">{price}</p>
                 <div className="btn_center">
                     <Link to={`detailspolo/${id}`}>
-                        <button className="btn_item">XEM CHI TIẾT</button>
+                        <button className="btn_item">CHI TIẾT SẢN PHẨM</button>
                     </Link>
 
                 </div>
