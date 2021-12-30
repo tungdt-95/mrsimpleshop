@@ -30,7 +30,7 @@ function Details()
         <div>
             <h1 className="product_title">CHI TIẾT SẢN PHẨM</h1>
              {products.filter(details =>details.id === id).map(product => (
-                <div className="grid wide" key={id}>
+                <div className="grid wide" key={}>
                         <div className="details_list">
                             <div className="row">
                             <div className="col l-4 center">
